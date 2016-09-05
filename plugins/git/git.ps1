@@ -15,6 +15,18 @@ function gitlog {
   git log --oneline --all --graph --decorate -n 30
 }
 
+function gst {
+	git status
+}
+
+function gco($branchName) {
+	git checkout $branchName
+}
+
+function gsb {
+	git show-branch --list
+}
+
 function checkGit($Path = "") {
     if (Test-Path -Path (Join-Path $Path '.git/') ) {
         Write-VcsStatus
