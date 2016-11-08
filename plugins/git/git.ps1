@@ -19,8 +19,8 @@ function gst {
 	git status
 }
 
-function gco($branchName) {
-	git checkout $branchName
+function gco {
+	git checkout $args
 }
 
 function gsb {
